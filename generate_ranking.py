@@ -163,7 +163,16 @@ def main():
     # Get GitHub token from environment
     token = os.getenv('GH_TOKEN')
     if not token:
-        print("Error: GH_TOKEN environment variable not set")
+        print("❌ Error: GH_TOKEN environment variable not set")
+        print("\n🔧 To fix this:")
+        print("1. Get a GitHub Personal Access Token from: https://github.com/settings/tokens")
+        print("2. Create a token with 'public_repo' and 'read:user' permissions")
+        print("3. Set it as environment variable:")
+        print("   export GH_TOKEN=your_token_here")
+        print("4. Then run: python generate_ranking.py")
+        print("\n🧪 For testing without a token, run:")
+        print("   python demo_ranking.py")
+        print("   python test_ranking.py")
         sys.exit(1)
         
     print("🇸🇴 Starting Somali GitHub Developer Ranking Bot...")

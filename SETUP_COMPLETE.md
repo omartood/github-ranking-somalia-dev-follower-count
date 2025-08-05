@@ -5,6 +5,7 @@
 Your Somali GitHub Developer Ranking Bot is now ready! Here's what was created:
 
 ### 📁 Project Structure
+
 ```
 top-somali-devs/
 ├── .github/workflows/dev-ranker.yml  # GitHub Actions workflow
@@ -19,6 +20,7 @@ top-somali-devs/
 ### 🔧 Core Features Implemented
 
 ✅ **Python Script (`generate_ranking.py`)**
+
 - Searches GitHub API for Somali developers
 - Multiple location queries: Somalia, Mogadishu, Hargeisa, Somaliland
 - Sorts by follower count (descending)
@@ -27,18 +29,21 @@ top-somali-devs/
 - Generates beautiful markdown table with emojis
 
 ✅ **GitHub Actions Workflow (`.github/workflows/dev-ranker.yml`)**
+
 - Runs daily at 6:00 AM UTC (9:00 AM East Africa Time)
 - Can be triggered manually
 - Auto-commits and pushes updates
 - Uses GitHub secrets for authentication
 
 ✅ **Error Handling & Rate Limiting**
+
 - Automatic retry on rate limits
 - Graceful error handling
 - Deduplication of developers
 - Pagination support for large result sets
 
 ✅ **Professional Documentation**
+
 - Step-by-step setup instructions
 - Local development guide
 - Customization options
@@ -76,11 +81,11 @@ The bot will generate a README.md like this:
 ```markdown
 # 🇸🇴 Top Somali Developers on GitHub
 
-| Rank | Developer | Followers | Profile |
-|------|-----------|-----------|----------|
-| 🥇 1 | [Ahmed Hassan](https://github.com/example1) | 534 | [@example1](https://github.com/example1) |
-| 🥈 2 | [Fatima Ali](https://github.com/example2) | 418 | [@example2](https://github.com/example2) |
-| 🥉 3 | [Mohamed Omar](https://github.com/example3) | 402 | [@example3](https://github.com/example3) |
+| Rank | Developer                                   | Followers | Profile                                  |
+| ---- | ------------------------------------------- | --------- | ---------------------------------------- |
+| 🥇 1 | [Ahmed Hassan](https://github.com/example1) | 534       | [@example1](https://github.com/example1) |
+| 🥈 2 | [Fatima Ali](https://github.com/example2)   | 418       | [@example2](https://github.com/example2) |
+| 🥉 3 | [Mohamed Omar](https://github.com/example3) | 402       | [@example3](https://github.com/example3) |
 
 _Last updated: 2025-08-05_
 ```

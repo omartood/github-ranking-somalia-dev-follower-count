@@ -81,8 +81,9 @@ class GitHubRanker:
                     print(f"Error fetching data: {e}")
                     break
                     
-        return self.deduplicate_developers(developers)   
- def get_user_details(self, username):
+        return self.deduplicate_developers(developers)
+        
+    def get_user_details(self, username):
         """Get detailed information for a specific user"""
         url = f"{self.base_url}/users/{username}"
         
@@ -155,8 +156,9 @@ class GitHubRanker:
         markdown += f"\n_Last updated: {timestamp}_\n"
         markdown += f"\n_Found {len(top_devs)} developers_\n"
         
-        return markdowndef 
-main():
+        return markdown
+
+def main():
     """Main function to run the ranking bot"""
     # Get GitHub token from environment
     token = os.getenv('GH_TOKEN')
